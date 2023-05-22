@@ -7,6 +7,6 @@ As documented in: https://cwiki.apache.org/confluence/display/JMETER/JMeterMaven
 
 ## Starting the GUI
 To start the JMeter GUI:
-<br>First you would need to run: `mvn clean verify`
+<br>First you may need to run: `mvn clean verify`
 <br>Then: `mvn jmeter:configure jmeter:gui`
 <br>Note: Its been recommended to not run official load tests in the GUI itself.
