@@ -1,9 +1,9 @@
 <project>
-  <modelVersion>4.0.0</modelVersion>
- 
-  <groupId>com.mycompany.app</groupId>
-  <artifactId>jmeter-maven-starter</artifactId>
-  <version>1.0</version>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.mycompany.app</groupId>
+    <artifactId>jmeter-maven-starter</artifactId>
+    <version>1.0</version>
     <build>
         <plugins>
             <plugin>
@@ -33,6 +33,14 @@
                         </goals>
                     </execution>
                 </executions>
+                <configuration>
+                    <testFilesIncluded>
+                        <jMeterTestFile>SftpJSchTest.jmx</jMeterTestFile>
+                    </testFilesIncluded>
+                    <jmeterExtensions>
+                        <artifact>com.jcraft:jsch:0.1.55</artifact>
+                    </jmeterExtensions>
+                </configuration>
             </plugin>
         </plugins>
     </build>
